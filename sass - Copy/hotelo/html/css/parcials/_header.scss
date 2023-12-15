@@ -1,0 +1,143 @@
+#header {
+    padding: 40px 0;
+    background-color: blueviolet;
+    .header-center {
+        align-items: center;
+
+        .col-logo {
+            width: 20%;
+            padding: $gatter-gap;
+
+            &.logo {
+                a {
+                    display: inline-block;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .col-menu {
+            width: 60%;
+            padding: $gatter-gap;
+
+            &.menu {
+                ul {
+                    justify-content: center;
+                    display: flex;
+                    column-gap: 40px;
+
+                    li {
+                        a {
+                            color: $black;
+                            font-size: $fz-lg;
+                            font-weight: $w-regular;
+                            line-height: $line-height;
+
+                            &:hover {
+                                color: $red;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .col-search {
+            width: 20%;
+            padding: $gatter-gap;
+
+            &.search {
+                text-align: end;
+
+                a {
+                    width: 76px;
+                    height: 40px;
+                    display: inline-block;
+                    background-color: $b-bg-green;
+                    color: $white;
+                    font-weight: $w-regular;
+                    font-size: $fz-x-sm;
+                    padding: 10px 20px;
+                    border-radius: 35px;
+                    line-height: 20px;
+
+                    &:hover {
+                        background-color: $hover;
+                    }
+                }
+
+                .toggle-bar {
+                    background-color: transparent;
+                    font-size: 35px;
+                    display: none;
+                }
+
+
+            }
+
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width:991px) {
+    #header {
+        padding: 10px 0 15px 0;
+
+        .header-center {
+            .col-logo {
+                width: 44%;
+            }
+
+            .col-menu {
+                width: 38%;
+
+                &.menu {
+                    ul {
+                        display: none;
+                        position: absolute;
+                        background-color: rgb(117, 103, 130);
+                        right: 0;
+                        top: 80px;
+                        width: 100%;
+                        padding: 20px 0;
+                        z-index: 1;
+                        text-align: center;
+
+                    }
+                    ul.show{
+                        display: unset;
+                    } 
+
+                }
+
+            }
+
+            .col-search {
+                width: 18%;
+
+                &.search {
+                    a {
+                        display: none;
+                    }
+
+                    .toggle-bar {
+                        text-align: end;
+                        display: block;
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+}

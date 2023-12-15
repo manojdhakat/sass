@@ -1,0 +1,132 @@
+.col-map-png {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.col-map-Hotelos {
+    width: auto;
+    padding: 0 15px;
+
+    @media screen and (max-width:1199px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.col-map-has-been {
+    width: auto;
+    padding: 0 15px;
+
+    @media screen and (max-width:1199px) {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+
+#map {
+
+    .map-png {
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+        img{
+            width: 100%;
+        }
+
+        .map-up {
+            display: flex;
+            position: absolute;
+            top: 63%;
+            left: 5%;
+            max-width: 1174px;
+            border-radius: 16px;
+            background: $white;
+            align-items: center;
+
+            @media screen and (max-width:1199px) {
+                position: sticky;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 20px 0 0 0;
+            }
+
+        }
+
+
+        .map-Hotelos {
+            padding: 44px 0 43px 66px;
+            @media screen and (max-width:1199px) {
+                padding:20px;
+                }
+
+            h3 {
+                color: $blacktwo;
+                font-size: $fz-b;
+                font-weight: $w-semibold;
+                line-height: 40px;
+                @media screen and (max-width:479px) {
+                font-size: 23px;
+                }
+            }
+
+            p {
+                padding: 16px 0 0 0;
+                @include pera;
+            }
+
+        }
+
+
+
+        .map-has-been {
+
+            form {
+                width: 436px;
+                height: 56px;
+                border-radius: 50px;
+                background: $box-bg;
+                margin: 0 0 0 116px;
+                @media screen and (max-width:1199px) {
+                margin: 0 auto;
+                width: 300px;
+                height: 42px;
+                }
+               
+                input {
+                    background-color: transparent;
+                    padding: 14px 82px 14px 51px;
+                    font-size: $fz-x-sm;
+                    font-weight: $w-regular;
+                    line-height: $line-heightft;
+                    @media screen and (max-width:1199px) {
+                        padding: 7px 0px 0 10px;
+
+                    }
+                    &::placeholder {
+                        color: $p-bg;
+                        @media screen and (max-width:1199px) {
+                            padding:  0 0 0 10px ;
+    
+                        }
+                    }
+                }
+
+                button {
+                    @extend .button;
+                  
+                    @media screen and (max-width:1199px) {
+                        padding: 9px 20px;
+
+                    }
+
+                    &:hover {
+                        color: $b-bg-green ;
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

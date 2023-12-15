@@ -1,0 +1,166 @@
+.col-footer-logo {
+    width: 28%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:767px) {
+        width: 40%;
+
+    }
+    @media screen and (max-width:479px) {
+        width: 100%;
+    }
+}
+
+
+
+.col-footer-Booking {
+    width: 18%;
+    padding: $gatter-gap;
+    @media screen and (max-width:1199px) {
+        width: 16%;
+
+    }
+    @media screen and (max-width:767px) {
+        width:21%;
+
+    }
+    @media screen and (max-width:479px) {
+        width: 100%;
+
+    }
+
+}
+
+.col-footer-About {
+    width: 21%;
+    padding: $gatter-gap;
+    @media screen and (max-width:1199px) {
+        width: 19%;
+
+    }
+    @media screen and (max-width:767px) {
+        width: 33%;
+
+    }
+    @media screen and (max-width:479px) {
+        width: 100%;
+
+    }
+}
+
+.col-footer-iOS {
+    width: 12%;
+    padding: $gatter-gap;
+    @media screen and (max-width:1199px) {
+        width: 25%;
+
+    }
+    @media screen and (max-width:767px) {
+        width: 94%;
+
+    }
+    @media screen and (max-width:479px) {
+        width: 100%;
+    }
+}
+
+
+
+
+#footer {
+    padding: 102px 0 81px 0;
+
+    @media screen and (max-width:1199px) {
+        padding: 40px 0;
+    }
+}
+
+.footer-main {
+    justify-content: center;
+    @media screen and (max-width:767px) {
+        row-gap: 60px;
+
+    }
+    @media screen and (max-width:479px) {
+        text-align: center;
+        row-gap: 40px;
+
+    }
+  
+}
+
+
+.footer-logo {
+    img {
+        width: auto;
+        object-fit: contain;
+    }
+
+    p {
+        @include pera;
+        max-width: 277px;
+        padding: 24px 0 32px 0;
+        @media screen and (max-width:1199px) {
+            padding:  15px  0 20px 0;
+        }
+        @media screen and (max-width:479px) {
+            margin: 0 auto;
+        }
+    }
+
+    ul {
+        display: flex;
+        column-gap: 30px;
+        @media screen and (max-width:479px) {
+            justify-content: center;
+        }
+    }
+
+    li {
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+.footer-home {
+    h2 {
+        padding: 0 0 24px 0;
+        color: $blacktwo;
+        font-weight: $w-regular;
+        font-size: $fz-gl;
+        line-height: $line-height-footer;
+
+        @media screen and (max-width:1199px) {
+            font-size: 20px;
+            padding: 0 0 15px 0;
+        }
+        @media screen and (max-width:479px) {
+            padding: 0 0 5px 0;
+    
+        }
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        @media screen and (max-width:767px) {
+            row-gap: 6px;
+    
+        }
+
+        li {
+            a {
+                @include private;
+                display: inline-block;
+                line-height: $line-heightft;
+
+                &:hover {
+                    color: $b-bg-green;
+                }
+            }
+        }
+    }
+}

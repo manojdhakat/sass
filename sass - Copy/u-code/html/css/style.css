@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#header {
+  width: 100%;
+  padding: 30px 0;
+}
+#header .col-header-logo {
+  width: 15%;
+  padding: 0 15px;
+}
+#header .col-header-logo.header-logo a {
+  display: inline-block;
+}
+#header .col-header-logo.header-logo a img {
+  width: 100%;
+  object-fit: contain;
+}
+#header .col-header-menu {
+  width: 70%;
+  padding: 0 15px;
+}
+#header .col-header-menu.header-menu ul {
+  display: flex;
+}
+#header .col-header-menu.header-menu ul li a {
+  display: inline-block;
+  color: cadetblue;
+}
+#header .col-rial {
+  width: 15%;
+  padding: 0 15px;
+}
+#header .col-rial.jeis a {
+  display: inline-block;
+}
+#header .col-rial.jeis button {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

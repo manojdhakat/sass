@@ -1,0 +1,110 @@
+.col-alexa-typesetting {
+    width: 59%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+}
+
+
+.col-alexa-industry {
+    width: 41%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+        order: 1;
+    }
+}
+
+
+
+
+#alexa {
+    padding: 30px 0;
+}
+
+.alexa-main {
+    background-color: $box-bg;
+
+    .alexa-typesetting {
+        padding: 68px 0 0 109px;
+
+        @media screen and (max-width:1199px) {
+            padding: 50px 0 0 30px;
+        }
+
+        @media screen and (max-width:767px) {
+            padding: 10px 10px 40px 10px;
+        }
+
+
+
+        p {
+            @include pera;
+            position: relative;
+
+            img {
+                width: auto;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: -45px;
+                right: -8px;
+                height: 100px;
+                width: 27px;
+                background-size: 23px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../imges/arrow-2.png);
+            }
+
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: -39px;
+                left: -30px;
+                height: 100px;
+                width: 27px;
+                background-size: 23px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../imges/arrow-1.png);
+            }
+
+
+        }
+    }
+
+    h4 {
+        padding: 57px 0 12px 0;
+        @include watch;
+        line-height: $line-height;
+
+        @media screen and (max-width:1199px) {
+            padding: 10px 0;
+        }
+    }
+
+    h6 {
+        @include pera;
+    }
+
+}
+
+
+.alexa-industry {
+    text-align: end;
+
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,10 @@
+.search{
+   background-color: blue;
+    padding: 20px;
+    color: aquamarine;
+    font-size: 20px;
+    
+}
+.submit{
+    @extend .search;
+}

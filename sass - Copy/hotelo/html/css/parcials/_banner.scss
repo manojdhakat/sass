@@ -1,0 +1,284 @@
+.col-main-bg {
+    width: 100%;
+    padding: $gatter-gap;
+}
+
+.col-banner-stay {
+    width: 50%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:575px) {
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
+.col-banner-United {
+    width: 50%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:575px) {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+#banner {
+    padding: 0 0 117px 0;
+    @media screen and (max-width:1199px) {
+        padding: 0 0 40px 0;
+    }
+
+
+
+
+    .main-bg {
+        background-color: $bannerbg;
+        border-radius: 55px;
+        position: relative;
+
+        @media screen and (max-width:575px) {
+            border-radius: 10px;
+            width: 100%;
+            padding: 30px 0 0 0;
+        }
+
+        .banner-stay {
+            padding: 88px 0 0 60px;
+
+            @media screen and (max-width:991px) {
+                padding: 40px 0 0 30px;
+
+            }
+
+            @media screen and (max-width:767px) {}
+
+            @media screen and (max-width:575px) {
+                padding: 0;
+                margin: 0 auto;
+                max-width: 300px;
+
+            }
+
+
+            h1 {
+                font-size: $fz-big;
+                font-weight: $w-semibold;
+                color: $black ;
+                line-height: 80px;
+
+                @media screen and (max-width:1199px) {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+                @media screen and (max-width:991px) {
+                    font-size: 39px;
+                    line-height: 50px;
+                }
+
+                @media screen and (max-width:767px) {
+                    font-size: 27px;
+                    line-height: 36px;
+                }
+
+                @media screen and (max-width:479px) {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                padding: 30px 0 58px 0;
+                font-size: $fz-sm;
+                font-weight: $w-regular;
+                color: $p-bg;
+                line-height: 32px;
+                max-width: 520px;
+
+                @media screen and (max-width:991px) {
+                    padding: 10px 0 30px 0;
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width:767px) {
+                    line-height: 23px;
+                    font-size: 16px;
+
+                }
+
+                @media screen and (max-width:575px) {
+                    padding: 10px 0;
+
+                }
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+
+                @media screen and (max-width:575px) {
+                    justify-content: center;
+                    margin: 0 0 10px 0;
+
+                }
+
+                .play {
+                    padding: 8px;
+                    width: 56px;
+                    height: 56px;
+                    background-color: #FFF;
+                    border-radius: 50%;
+
+                }
+
+                li {
+
+                    a {
+                        .fa-play {
+                            padding: 10px 0 0 15px;
+                            width: 40px;
+                            height: 40px;
+                            color: $watch;
+                            background-color: $white;
+                            border-radius: 50%;
+
+                            &:hover {
+                                background-color: $hover;
+                            }
+                        }
+
+                        display: inline-block;
+                        font-size: $fz-sm;
+                        color:$blacktwo ;
+                        font-weight: $w-semibold;
+                        line-height: $line-height-t;
+
+                    }
+                }
+            }
+
+        }
+
+
+        .banner-United {
+            img {
+                width: 100%;
+                object-fit: contain;
+
+                @media screen and (max-width:575px) {
+                    width: 70%;
+
+                }
+            }
+        }
+
+
+        .banner-up {
+            position: absolute;
+            width: 1000px;
+            height: auto;
+            background-color: $white;
+            border-radius: 280px;
+            box-shadow: 0px 22px 38px 0px rgba(0, 34, 19, 0.08);
+            top:80%;
+            left: 8%;
+
+            @media screen and (max-width:1199px) {
+                position: static;
+                margin: 0 auto;
+                border-radius: 1px;
+                padding: 35px 10px;
+            }
+
+            
+
+
+
+
+            ul {
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                @media screen and (max-width:991px) {
+                    flex-wrap: wrap;
+                    row-gap: 20px;
+                    justify-content: center;
+                }
+
+                .border {
+
+                    border-right: 1px solid $box;
+                    @media screen and (max-width:991px) {
+                       padding: 0 10px;
+                    }
+                }
+
+                img {
+                    width: auto;
+                    padding: 0 10px 0 0;
+                }
+
+                span {
+                    font-size: $fz-x-sm;
+                    font-weight: $w-regular;
+                    color: $p-bg;
+                    line-height: 16px;
+                    display: inline-block;
+                    padding: 8px 0 0 46px;
+
+                    @media screen and (max-width:767px) {
+                        padding: 0 0 0 20px;
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    color: $black;
+                    font-size: $fz-lg;
+                    font-weight: $w-regular;
+                    line-height: $line-height;
+
+                    .fa-map-marker {
+                        color: blueviolet;
+                        padding: 0 0 0 10px;
+
+                    }
+                }
+
+                li:last-child {
+                    width: 200px;
+                    height: 100px;
+                    border-radius: $radius;
+                    background: $b-bg-green;
+                    padding: 38px 42px 38px 37px;
+
+                    @media screen and (max-width:991px) {
+                        width: 131px;
+                        height: 48px;
+                        padding: 10px 0 0 0;
+                        margin: 0 0 0 20px;
+                    }
+
+                    &:hover {
+                        background-color: $red;
+                    }
+
+                    .fa-search {
+                        padding: 5px 12px 0 0;
+                    }
+                }
+            }
+
+        }
+    }
+}

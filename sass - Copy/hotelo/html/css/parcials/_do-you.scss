@@ -1,0 +1,141 @@
+#do-you {
+    padding: 40px 0;
+
+
+    .main {
+        justify-content: end;
+        row-gap: 45px;
+
+        @media screen and (max-width:991px) {
+            justify-content: center;
+        }
+
+        .col-you-facilities {
+            width: 36%;
+            padding: $gatter-gap;
+
+            @media screen and (max-width:991px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            &.you-facilities {
+                h3 {
+                    @include inner;
+                    line-height: $line-height-five;
+
+                    @media screen and (max-width:1199px) {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                    @media screen and (max-width:991px) {
+                        font-size: 25px;
+                        line-height: 30px;
+                    }
+
+                    @media screen and (max-width:575px) {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+
+                    
+                }
+
+                p {
+                    @include pera;
+                    padding: 20px 0 50px 0;
+
+                    @media screen and (max-width:1199px) {
+                        padding: 0 0 10px 0;
+                    }
+
+                    @media screen and (max-width:991px) {
+                        margin: 0 auto;
+                        padding:  10px  ;
+                    }
+
+                    @media screen and (max-width:575px) {
+                        font-size: 15px;
+                    }
+                }
+
+                a {
+
+                    @extend .button;
+                    display: inline-block;
+
+                    @media screen and (max-width:991px) {
+                        padding: 10px 20px;
+                        font-size: 15px;
+                    }
+                    @media screen and (max-width:767px) {
+                        padding: 6px 15px;
+                        font-size: 14px;
+                       
+                    }
+                }
+
+            }
+
+        }
+
+        .col-main-text {
+            width: 64%;
+            padding: 0 15px;
+
+            @media screen and (max-width:991px) {
+                width: 100%;
+            }
+
+            .maijar {
+                row-gap: 20px;
+                column-gap: 20px;
+
+                .col-you-Workspace {
+                    width: 25%;
+                    padding: $gatter-gap;
+
+                    
+
+                    &.you-Workspace {
+                        padding: 51px 0px 50px 0px;
+                        text-align: center;
+                        border-radius: 8px;
+                        width: calc(25% - 15px);
+                        border: 1px solid #E8E8E8;
+                        background: #fff;
+
+                        @media screen and (max-width:1199px) {
+                            padding: 30px 1px;
+                        }
+                        @media screen and (max-width:767px) {
+                            width: calc(33.3% - 15px);
+                        }
+                        @media screen and (max-width:575px) {
+                            width: calc(50% - 15px);
+                        }
+                        @media screen and (max-width:479px) {
+                            width: calc(100% - 15px);
+                        }
+                        img {
+                            width: auto;
+                            object-fit: contain;
+                        }
+
+                        a {
+                            display: block;
+                            padding: 24px 0 0 0;
+                            line-height: $line-height;
+                            @include private;
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+
+
+    }
+}

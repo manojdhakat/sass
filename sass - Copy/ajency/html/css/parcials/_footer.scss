@@ -1,0 +1,239 @@
+.col-footer-logo {
+    width: 25%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:1169px) {
+        width: 40%;
+    }
+
+    @media screen and (max-width:991px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width:575px) {
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
+.col-footer-menu {
+    width: 25%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:1169px) {
+        width: 33%;
+    }
+
+    @media screen and (max-width:991px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width:575px) {
+        width: 100%;
+        text-align: center;
+
+    }
+
+}
+
+.col-footer-Quick {
+    width: 25%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:1169px) {
+        width: 27%;
+    }
+
+    @media screen and (max-width:991px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width:575px) {
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
+.col-footer-Services {
+    width: 25%;
+    padding: $gatter-gap;
+
+    @media screen and (max-width:1169px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width:575px) {
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
+.gap-fot {
+    row-gap: 35px;
+}
+
+#footer {
+    padding: 80px 0;
+    background-color: $ft-bg;
+
+    @media screen and (max-width:1169px) {
+        padding: 40px 0;
+    }
+}
+
+.gap-fot {
+    row-gap: 35px;
+
+
+    .footer-logo {
+        p {
+            @include pera;
+            max-width: 363px;
+            line-height: 30px;
+            letter-spacing: 0.16px;
+            padding: 15px 0 0 0;
+
+            @media screen and (max-width:575px) {
+                margin: 0 auto;
+                padding: 5px 0 0 0;
+            }
+        }
+
+        a {
+            display: inline-block;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+.footer-menu {
+    h3 {
+        color: $white;
+        font-size: $f-hth;
+        font-weight: $fw-s-b;
+        letter-spacing: 0.9px;
+        padding: 0 0 15px 0;
+
+        @media screen and (max-width:1023px) {
+            font-size: 27px;
+        }
+
+        @media screen and (max-width:575px) {
+            padding: 0;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width:479px) {
+            font-size: 18px;
+        }
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            a {
+                @include menu;
+                color: $white;
+
+                line-height: 40px;
+                letter-spacing: 0.48px;
+
+                &:hover {
+                    color: rgb(101, 108, 108);
+                }
+
+                @media screen and (max-width:1169px) {
+                    font-size: 15px;
+                    line-height: 35px;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+.footer-logo {
+    p {
+        @include pera;
+        max-width: 363px;
+        line-height: 30px;
+        letter-spacing: 0.16px;
+        padding: 15px 0 0 0;
+
+        @media screen and (max-width:575px) {
+            margin: 0 auto;
+            padding: 5px 0 0 0;
+        }
+    }
+
+    a {
+        display: inline-block;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.footer-menu {
+    h3 {
+        color: $white;
+        font-size: $f-hth;
+        font-weight: $fw-s-b;
+        letter-spacing: 0.9px;
+        padding: 0 0 15px 0;
+
+        @media screen and (max-width:1023px) {
+            font-size: 27px;
+        }
+
+        @media screen and (max-width:575px) {
+            padding: 0;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width:479px) {
+            font-size: 18px;
+        }
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            a {
+                @include menu;
+                color: $white;
+
+                line-height: 40px;
+                letter-spacing: 0.48px;
+
+                &:hover {
+                    color: rgb(101, 108, 108);
+                }
+
+                @media screen and (max-width:1169px) {
+                    font-size: 15px;
+                    line-height: 35px;
+                }
+
+            }
+        }
+    }
+}

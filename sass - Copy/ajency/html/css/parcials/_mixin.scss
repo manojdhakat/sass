@@ -1,0 +1,15 @@
+@mixin menu{
+    font-size: $fz-lg;
+    font-weight: $fw-m;
+   
+}
+@mixin pera{
+    color: $white;
+    font-size: $fz-lg;
+    font-weight: $fw-r;
+
+}
+@mixin col{
+    width: 50%;
+    padding: $gatter-gap;
+}

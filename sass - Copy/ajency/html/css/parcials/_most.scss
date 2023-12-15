@@ -1,0 +1,314 @@
+.col-most {
+    @include col;
+
+    @media screen and (max-width:1169px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.col-pick {
+    @include col;
+
+    @media screen and (max-width:1169px) {
+        width: 100%;
+
+    }
+}
+
+#most {
+    padding: 160px 0;
+
+    @media screen and (max-width:1365px) {
+        padding: 100px 0;
+    }
+
+    @media screen and (max-width:1169px) {
+        padding: 50px  0;
+    }
+    @media screen and (max-width:839px) {
+        padding: 50px  0 0 0;
+    }
+
+}
+
+.gap {
+    row-gap: 160px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width:1169px) {
+        justify-content: center;
+        margin: 20px 0 0 0;
+        row-gap: 15px;
+
+        .most-text:nth-child(1) {
+            order: 2;
+
+        }
+
+    }
+
+    @media screen and (max-width:639px) {
+        row-gap: 10px;
+
+    }
+}
+
+.top {
+    margin: 160px 0 0 0;
+    align-items: center;
+    row-gap: 30px;
+
+    @media screen and (max-width:1169px) {
+        margin: 70px 0 0 0;
+        row-gap: 15px;
+    }
+
+    @media screen and (max-width:639px) {
+        row-gap: 10px;
+
+    }
+
+    @media screen and (max-width:839px) {
+        margin: 80px 0;
+
+    }
+
+    @media screen and (max-width:575px) {
+        margin: 50px 0;
+
+    }
+}
+
+.most-text {
+    max-width: 670px;
+
+    @media screen and (max-width:1169px) {
+        max-width: 1100px;
+
+    }
+
+    .lorem {
+        padding: 0 0 20px 0;
+    }
+
+    h2 {
+        color: $black;
+        font-size: $f-ht;
+        font-weight: $fw-b;
+        line-height: 70px;
+        letter-spacing: 0.48px;
+        padding: 0 0 20px 0;
+
+        @media screen and (max-width:1365px) {
+            font-size: 40px;
+            line-height: 55px;
+            padding: 10px 0 5px 0;
+        }
+
+        @media screen and (max-width:1279px) {
+            font-size: 30px;
+            line-height: 33px;
+            padding: 0 0 5px 0;
+        }
+
+        @media screen and (max-width:575px) {
+            font-size: 25px;
+            line-height: 28px;
+        }
+
+        @media screen and (max-width:479px) {
+            font-size: 22px;
+        }
+    }
+
+    p {
+        color: $black;
+        font-size: $fz-lg;
+        font-weight: $fw-m;
+        line-height: 30px;
+        letter-spacing: 0.48px;
+
+        @media screen and (max-width:1279px) {
+            font-size: 15px;
+            line-height: 23px;
+            max-width: 782px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.pick {
+    text-align: end;
+
+    @media screen and (max-width:1169px) {
+        text-align: center;
+
+
+    }
+
+    img {
+        width: 100%;
+        object-fit: contain;
+
+        @media screen and (max-width:1169px) {
+            width: 784px;
+            height: auto;
+        }
+
+        @media screen and (max-width:839px) {
+            width: 700px;
+        }
+
+        @media screen and (max-width:767px) {
+            width: 590px;
+        }
+
+        @media screen and (max-width:639px) {
+            width: 500px;
+        }
+
+        @media screen and (max-width:575px) {
+            width: 400px;
+        }
+
+        @media screen and (max-width:479px) {
+            width: 300px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #most {
+//     padding: 160px 0;
+
+//     .gap {
+//         row-gap: 160px;
+//         align-items: center;
+//         justify-content: space-between;
+
+//         .col-most {
+//             @include col;
+
+//             &.most-text {
+//                 max-width: 670px;
+
+//                 .lorem {
+//                     padding: 0 0 20px 0;
+//                 }
+
+//                 h2 {
+//                     color: $black;
+//                     font-size: $f-ht;
+//                     font-weight: $fw-b;
+//                     line-height: 70px;
+//                     letter-spacing: 0.48px;
+//                     padding: 0 0 20px 0;
+
+//                 }
+
+//                 p {
+//                     color: $black;
+//                     font-size: $fz-lg;
+//                     font-weight: $fw-m;
+//                     line-height: 30px;
+//                     letter-spacing: 0.48px;
+
+//                 }
+
+
+//             }
+
+//         }
+
+//         .col-pick {
+//             @include col;
+
+//             &.pick {
+//                 text-align: end;
+
+//                 img {
+//                     width: 100%;
+//                     object-fit: contain;
+//                 }
+//             }
+//         }
+//     }
+
+//     .top {
+//         margin: 160px 0 0 0;
+//         align-items: center;
+//         row-gap: 30px;
+//     }
+
+// }

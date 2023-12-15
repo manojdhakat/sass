@@ -1,0 +1,25 @@
+@mixin pera {
+    font-weight: $w-regular;
+    font-size: $fz-lg;
+    line-height: $line-height;
+}
+
+@mixin inner {
+    color: $black;
+    font-size: $fz-x-lg;
+    font-weight: $w-semibold;
+}
+
+@mixin watch {
+    color: $blacktwo;
+    font-weight: $w-semibold;
+    
+}
+@mixin private{
+    color: $blacktwo;
+    font-weight: $w-regular;
+    font-size: $fz-lg;
+}
+.hover{
+background-color: rgb(112, 111, 111);
+}
